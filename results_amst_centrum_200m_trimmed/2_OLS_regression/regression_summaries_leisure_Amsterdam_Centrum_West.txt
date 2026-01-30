@@ -1,0 +1,30 @@
+Model: leisure_name_ratio ~ leisure_latest5_name_contributions + leisure_name_tagChange_contributions + leisure_users_count_name + leisure_name_contributions
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     leisure_name_ratio   R-squared:                       0.446
+Model:                            OLS   Adj. R-squared:                  0.420
+Method:                 Least Squares   F-statistic:                     16.73
+Date:                Fri, 30 Jan 2026   Prob (F-statistic):           4.29e-10
+Time:                        16:39:25   Log-Likelihood:                -428.86
+No. Observations:                  88   AIC:                             867.7
+Df Residuals:                      83   BIC:                             880.1
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+const                                   10.0469      4.358      2.305      0.024       1.379      18.715
+leisure_latest5_name_contributions      26.9065      8.532      3.154      0.002       9.937      43.876
+leisure_name_tagChange_contributions     6.5028      8.048      0.808      0.421      -9.504      22.510
+leisure_users_count_name                 6.6970      9.376      0.714      0.477     -11.951      25.345
+leisure_name_contributions              -2.6211      4.202     -0.624      0.534     -10.979       5.737
+==============================================================================
+Omnibus:                       17.243   Durbin-Watson:                   2.026
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               20.961
+Skew:                           0.987   Prob(JB):                     2.81e-05
+Kurtosis:                       4.348   Cond. No.                         19.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+

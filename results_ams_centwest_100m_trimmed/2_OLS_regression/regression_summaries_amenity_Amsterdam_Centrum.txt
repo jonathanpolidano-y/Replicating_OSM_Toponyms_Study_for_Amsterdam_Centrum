@@ -1,0 +1,90 @@
+Model: leisure_name_ratio ~ leisure_name_contributions + leisure_latest5_name_contributions + leisure_name_tagChange_contributions + leisure_users_count_name
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     leisure_name_ratio   R-squared:                       0.610
+Model:                            OLS   Adj. R-squared:                  0.606
+Method:                 Least Squares   F-statistic:                     135.8
+Date:                Fri, 30 Jan 2026   Prob (F-statistic):           1.12e-69
+Time:                        11:21:57   Log-Likelihood:                -1575.1
+No. Observations:                 352   AIC:                             3160.
+Df Residuals:                     347   BIC:                             3179.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+const                                    3.3564      1.242      2.702      0.007       0.913       5.799
+leisure_name_contributions             -16.0489      3.952     -4.061      0.000     -23.822      -8.276
+leisure_latest5_name_contributions      70.5831      6.327     11.157      0.000      58.140      83.026
+leisure_name_tagChange_contributions    -1.2927      3.944     -0.328      0.743      -9.049       6.464
+leisure_users_count_name                 8.4864      2.305      3.682      0.000       3.953      13.020
+==============================================================================
+Omnibus:                      151.043   Durbin-Watson:                   1.580
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1942.179
+Skew:                           1.421   Prob(JB):                         0.00
+Kurtosis:                      14.151   Cond. No.                         11.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model: building_name_ratio ~ building_name_contributions + building_latest5_name_contributions + building_name_tagChange_contributions + building_users_count_name
+                             OLS Regression Results                            
+===============================================================================
+Dep. Variable:     building_name_ratio   R-squared:                       0.216
+Model:                             OLS   Adj. R-squared:                  0.206
+Method:                  Least Squares   F-statistic:                     23.84
+Date:                 Fri, 30 Jan 2026   Prob (F-statistic):           1.96e-17
+Time:                         11:22:24   Log-Likelihood:                -1485.4
+No. Observations:                  352   AIC:                             2981.
+Df Residuals:                      347   BIC:                             3000.
+Df Model:                            4                                         
+Covariance Type:             nonrobust                                         
+=========================================================================================================
+                                            coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------
+const                                    -0.0475      1.135     -0.042      0.967      -2.280       2.185
+building_name_contributions               0.8090      0.413      1.957      0.051      -0.004       1.622
+building_latest5_name_contributions       3.8021      1.086      3.500      0.001       1.666       5.938
+building_name_tagChange_contributions    -2.1400      0.525     -4.077      0.000      -3.172      -1.108
+building_users_count_name                 2.0146      0.422      4.770      0.000       1.184       2.845
+==============================================================================
+Omnibus:                      267.988   Durbin-Watson:                   1.106
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3134.085
+Skew:                           3.226   Prob(JB):                         0.00
+Kurtosis:                      16.117   Cond. No.                         25.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model: amenity_name_ratio ~ amenity_name_contributions + amenity_latest5_name_contributions + amenity_name_tagChange_contributions + amenity_users_count_name
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     amenity_name_ratio   R-squared:                       0.273
+Model:                            OLS   Adj. R-squared:                  0.265
+Method:                 Least Squares   F-statistic:                     32.58
+Date:                Fri, 30 Jan 2026   Prob (F-statistic):           4.52e-23
+Time:                        11:22:50   Log-Likelihood:                -1751.7
+No. Observations:                 352   AIC:                             3513.
+Df Residuals:                     347   BIC:                             3533.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+const                                   33.0763      2.762     11.977      0.000      27.645      38.508
+amenity_name_contributions               0.3298      0.491      0.672      0.502      -0.636       1.295
+amenity_latest5_name_contributions       4.3998      0.866      5.078      0.000       2.696       6.104
+amenity_name_tagChange_contributions    -1.7419      0.405     -4.297      0.000      -2.539      -0.945
+amenity_users_count_name                 2.0838      0.466      4.470      0.000       1.167       3.001
+==============================================================================
+Omnibus:                      154.390   Durbin-Watson:                   1.720
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               25.376
+Skew:                           0.318   Prob(JB):                     3.09e-06
+Kurtosis:                       1.849   Cond. No.                         39.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+

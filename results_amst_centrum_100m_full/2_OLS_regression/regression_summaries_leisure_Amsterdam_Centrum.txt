@@ -1,0 +1,56 @@
+Model: leisure_name_ratio ~ 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     leisure_name_ratio   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Thu, 29 Jan 2026   Prob (F-statistic):                nan
+Time:                        15:06:22   Log-Likelihood:                -4059.6
+No. Observations:                 818   AIC:                             8121.
+Df Residuals:                     817   BIC:                             8126.
+Df Model:                           0                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         15.8339      1.211     13.080      0.000      13.458      18.210
+==============================================================================
+Omnibus:                      264.201   Durbin-Watson:                   1.381
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              576.264
+Skew:                           1.872   Prob(JB):                    7.34e-126
+Kurtosis:                       4.701   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model: leisure_name_ratio ~ leisure_name_contributions + leisure_latest5_name_contributions + leisure_name_tagChange_contributions + leisure_users_count_name
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     leisure_name_ratio   R-squared:                       0.440
+Model:                            OLS   Adj. R-squared:                  0.437
+Method:                 Least Squares   F-statistic:                     159.6
+Date:                Thu, 29 Jan 2026   Prob (F-statistic):          8.40e-101
+Time:                        15:07:09   Log-Likelihood:                -3822.5
+No. Observations:                 818   AIC:                             7655.
+Df Residuals:                     813   BIC:                             7679.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+========================================================================================================
+                                           coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------
+const                                   10.3848      1.265      8.209      0.000       7.902      12.868
+leisure_name_contributions              -0.5384      0.133     -4.033      0.000      -0.800      -0.276
+leisure_latest5_name_contributions      31.5738      2.526     12.497      0.000      26.615      36.533
+leisure_name_tagChange_contributions    -2.9443      1.183     -2.488      0.013      -5.267      -0.622
+leisure_users_count_name                 4.2945      0.968      4.438      0.000       2.395       6.194
+==============================================================================
+Omnibus:                      284.426   Durbin-Watson:                   1.360
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1222.935
+Skew:                           1.570   Prob(JB):                    2.77e-266
+Kurtosis:                       8.102   Cond. No.                         31.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
